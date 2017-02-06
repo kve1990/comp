@@ -1,0 +1,17 @@
+<div class="container">
+    <h1 class="main_header">{{ titlePage }}</h1>
+</div>
+<div class="container" style="color: #333; font-size: 1.4rem; flex: 1;">
+    <div class="blog-item" *ngFor="let post of posts">
+        <div class="blog-item-content">
+            <h3 class="blog-item-header">{{post.title}}</h3>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <img src="img/download.jpg" alt="" style="max-width: 20rem; margin-right: 2rem;">
+                <p class="blog-item-body">{{post.description}}</p>
+            </div>
+        </div>
+        <div class="blog-item-button">
+            <button>Подробнее</button>
+        </div>
+    </div>
+</div>

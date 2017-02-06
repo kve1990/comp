@@ -1,0 +1,62 @@
+<div class="contacts">
+    <div class="container">
+        <h1 class="main_header">Контакты</h1>
+        <h2 class="contacts_header">Мы расположены</h2>
+        <div class="contacts_info">
+        <div class="contacts_info__txt">
+            <h3>Компьютерная мастерская "Айсберг"</h3>
+            <p>
+            Адрес: Улан-Удэ, п.Аэропорт, 24<br>
+            Тел.: 82387-283-823<br>
+            Email: lskdfjl@mail.ru<br>
+            Часы работы: 10.00 -20.00 (БЕЗ ВЫХОДНЫХ !)
+            </p>
+        </div>
+        <div class="contacts_info__photo"><img src="./assets/img/29.jpg"></div>
+        </div>
+    </div>
+</div>
+<div class="contacts-form">
+    <h2 class="contacts_header">Связаться с нами</h2>
+    <div class="container">
+        <form class="contacts-form-self">
+        <label class="contacts-form_label">Your name:<br>
+            <input type="text" placeholder="name" class="contacts_input">
+        </label>
+        <label class="contacts-form_label">Your email:<br>
+            <input type="email" placeholder="email" class="contacts_input">
+        </label>
+        <label class="contacts-form_label">Your message:<br>
+            <textarea placeholder="message" class="contacts_textarea"></textarea>
+        </label>
+        <button class="contacts-form_submit">Отправить</button>
+        </form>
+        <div class="contacts-form-txt">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eaque quibusdam, dolorem blanditiis impedit accusantium, architecto unde voluptatem eius, voluptate voluptas hic nobis? Autem, porro, nemo? Consequatur eaque quibusdam, dolorem blanditiis impedit accusantium, architecto unde voluptatem eius, voluptate voluptas hic nobis? Autem, porro, nemo?</p>
+        </div>
+    </div>
+</div>
+<div class="contacts-socials">
+    <div class="container">
+        <h2 class="contacts_header">Мы в социальных сетях</h2>
+        <div class="socials">
+        <div class="socials-item"><a href="#"><img src="./assets/img/vk.svg"></a></div>
+        <div class="socials-item"><a href="#"><img src="./assets/img/facebook.svg"></a></div>
+        <div class="socials-item"><a href="#"><img src="./assets/img/twitter.svg"></a></div>
+        <div class="socials-item"><a href="#"><img src="./assets/img/skype.svg"></a></div>
+        <div class="socials-item"><a href="#"><img src="./assets/img/google.svg"></a></div>
+        </div>
+    </div>
+</div>
+<sebm-google-map 
+      [latitude]="lat"
+      [longitude]="lng"
+      [zoom]="zoom"
+      [disableDefaultUI]="false"
+      [zoomControl]="false">
+    
+    <sebm-google-map-marker
+        [latitude]="m.lat"
+        [longitude]="m.lng">
+    </sebm-google-map-marker>
+</sebm-google-map>

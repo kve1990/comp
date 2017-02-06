@@ -1,0 +1,13 @@
+<div class="category">
+<div class="container">
+    <div class="category-item" *ngFor="let item of items" [@movePanel]='state'>
+        <div class="category-item-content">
+            <div class="category-item-img"><img [src]="item.img"></div>
+            <h3 class="category-item-header">{{item.title}}</h3>
+        </div>
+        <div class="category-item-button">
+            <button (click)="clickButton(item.id)">Подробнее</button>
+        </div>
+    </div> 
+</div>
+</div>
