@@ -1,0 +1,8 @@
+<div class="container">
+    <h1 class="main_header">{{ titlePage }}</h1>
+    <p class="main_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis amet recusandae rerum eligendi, ex necessitatibus minima ea unde culpa sint ullam dolorum molestias, ducimus fugit accusamus, cumque. Mollitia commodi eum dignissimos consectetur ullam obcaecati, dolores ipsa veritatis molestias dicta suscipit similique vel veniam. Exercitationem natus tempore voluptas iusto laboriosam, rem, consectetur voluptate repellat officia dolorem cumque animi repudiandae excepturi quo, sequi optio sapiente aliquam distinctio maxime cupiditate eveniet. Laborum repudiandae veniam sapiente, asperiores iste quas quibusdam quia est, ipsam, delectus voluptate ea assumenda maxime sunt, consectetur obcaecati eos! Distinctio nam sunt perferendis tempora voluptates nihil. Aliquid repudiandae, vero consectetur minima.</p>
+</div>
+<app-category [items]="categories" (getSubitems)="getSubcategories($event)"></app-category>
+<div *ngIf="subcategories">
+    <app-category [items]="subcategories"  (getSubitems)="goToCategory($event)"></app-category>
+</div>

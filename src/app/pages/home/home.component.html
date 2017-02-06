@@ -1,0 +1,13 @@
+<app-banner></app-banner>
+<div class="advantage">
+<div class="container">
+    <div class="advantage-items">
+        <div class="advantage-item" *ngFor="let i of [1,2,3,4]"><img src="./assets/img/g2.png"></div>
+    </div>
+    <div class="advantage-content">
+    <h3 class="advantage-content-header">Temporar quam ducimus ab <span class="thin">ANM</span></h3>
+    <p class="advantage-content-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus reprehenderit eius iusto porro, id nostrum cupiditate in esse. Tenetur dolore enim repellat asperiores, nihil excepturi illum quod animi cupiditate, eos, doloribus, officiis nulla earum debitis labore assumenda commodi quisquam dolores repudiandae consectetur voluptatem. Ipsum eaque cumque, ducimus eveniet quidem velit.</p>
+    </div>
+</div>
+</div>
+<app-category [items]="categories" (getSubitems)="goToService($event)"></app-category>

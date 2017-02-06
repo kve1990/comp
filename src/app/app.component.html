@@ -1,0 +1,35 @@
+<div [style.var(--base-color)]='color' [class]="state ? 'menu-open' : ''">
+    <!-- navigation -->
+    <nav class="pages-nav">
+        <div class="pages-nav__item"><a class="link link--page" [routerLink]="['/']" (click)="toggleMenu()">Главная</a></div>
+        <div class="pages-nav__item"><a class="link link--page" [routerLink]="['/service']" (click)="toggleMenu()">Услуги</a></div>
+        <div class="pages-nav__item"><a class="link link--page" [routerLink]="['/about']" (click)="toggleMenu()">О нас</a></div>
+        <div class="pages-nav__item"><a class="link link--page" [routerLink]="['/contacts']" (click)="toggleMenu()">Контакты</a></div>
+        <div class="pages-nav__item"><a class="link link--page" [routerLink]="['/settings']" (click)="toggleMenu()">Кастомизация &amp; Настройки</a></div>
+        <div class="pages-nav__item"><a class="link link--page" [routerLink]="['/price']" (click)="toggleMenu()">Прайс</a></div>
+        <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" [routerLink]="['/shop']" (click)="toggleMenu()">Товары на продажу</a></div>
+        <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" [routerLink]="['/blog']" (click)="toggleMenu()">Блог &amp; Новости</a></div>
+        <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" [routerLink]="['/partners']" (click)="toggleMenu()">Наши партнеры</a></div>
+        <div class="pages-nav__item pages-nav__item--social">
+            <a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
+            <a class="link link--social link--faded" href="#"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+            <a class="link link--social link--faded" href="#"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+            <a class="link link--social link--faded" href="#"><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+        </div>
+    </nav>
+    <!-- /navigation-->
+    <!-- pages stack -->
+    <div class="pages-stack" style="background: url(./img/Background15.svg)">
+        <!-- page -->
+        <div class="page" id="page-home" (click)='pageClick($event)'>
+            <!-- Blueprint header -->
+            <app-header></app-header>
+            <router-outlet></router-outlet>
+            <app-footer></app-footer>
+        </div>
+        <!-- /page -->
+    </div>
+    <!-- /pages-stack -->
+
+    <button class="menu-button" (click)="toggleMenu()"><span>Menu</span></button>
+</div>
